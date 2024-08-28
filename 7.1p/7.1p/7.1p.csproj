@@ -8,22 +8,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="**/*.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\app.config" Link="app.config" />
-  </ItemGroup>
-
-  <Target Name="Build">
-    <PropertyGroup>
-      <OutputPath>$(OutputPath)\bin\$(Configuration)</OutputPath>
-    </PropertyGroup>
-    <ItemGroup>
-      <Compile Include="**/*.cs" />
-    </ItemGroup>
-    <Exec Command="C:\Path\To\Compiler.exe $(Compile)" />  </Target>
-
 </Project>
-
